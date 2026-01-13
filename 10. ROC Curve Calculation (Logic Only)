@@ -1,0 +1,8 @@
+y_true = [1,1,0,0]
+y_score = [0.9,0.8,0.4,0.1]
+
+thresholds = sorted(y_score, reverse=True)
+for t in thresholds:
+    tp = sum(1 for yt,ys in zip(y_true,y_score) if ys>=t and yt==1)
+    fp = sum(1 for yt,ys in zip(y_true,y_score) if ys>=t and yt==0)
+    print("Threshold:",t,"TP:",tp,"FP:",fp)
