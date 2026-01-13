@@ -1,0 +1,6 @@
+import math
+
+y = 1
+y_pred = 0.9
+loss = -(y*math.log(y_pred)+(1-y)*math.log(1-y_pred))
+print(loss)
