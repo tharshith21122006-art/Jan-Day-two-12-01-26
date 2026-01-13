@@ -1,0 +1,6 @@
+model1 = [1,0,1]
+model2 = [1,1,0]
+model3 = [0,1,1]
+
+final = [1 if sum(x)>1 else 0 for x in zip(model1,model2,model3)]
+print(final)
