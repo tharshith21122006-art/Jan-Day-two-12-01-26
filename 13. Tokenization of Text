@@ -1,0 +1,3 @@
+sentence = "Artificial Intelligence is powerful"
+tokens = sentence.lower().split()
+print(tokens)
