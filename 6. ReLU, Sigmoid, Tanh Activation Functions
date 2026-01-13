@@ -1,0 +1,6 @@
+import math
+
+x = 2
+print("ReLU:", max(0,x))
+print("Sigmoid:", 1/(1+math.exp(-x)))
+print("Tanh:", math.tanh(x))
