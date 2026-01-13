@@ -1,0 +1,5 @@
+labels = ["cat","dog","cat","bird"]
+unique = list(set(labels))
+
+encoded = [[1 if l==u else 0 for u in unique] for l in labels]
+print(encoded)
