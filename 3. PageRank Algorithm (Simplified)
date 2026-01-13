@@ -1,0 +1,10 @@
+pages = {'A':['B','C'], 'B':['C'], 'C':['A']}
+rank = {p:1/len(pages) for p in pages}
+
+for _ in range(10):
+    new_rank = {}
+    for p in pages:
+        new_rank[p] = sum(rank[q]/len(pages[q]) for q in pages if p in pages[q])
+    rank = new_rank
+
+print(rank)
