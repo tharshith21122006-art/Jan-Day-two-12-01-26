@@ -1,0 +1,8 @@
+predictions = [2,2.5,3,3.5]
+true = 3
+
+bias = sum(predictions)/len(predictions) - true
+variance = sum((p - sum(predictions)/len(predictions))**2 for p in predictions)
+
+print("Bias:", bias)
+print("Variance:", variance)
