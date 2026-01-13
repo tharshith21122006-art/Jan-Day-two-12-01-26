@@ -1,0 +1,10 @@
+docs = ["ai is future","future of ai"]
+vocab = set(" ".join(docs).split())
+
+vectors = []
+for d in docs:
+    vec = [d.split().count(w) for w in vocab]
+    vectors.append(vec)
+
+print(vocab)
+print(vectors)
