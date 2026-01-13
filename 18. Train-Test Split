@@ -1,0 +1,7 @@
+data = [1,2,3,4,5,6,7,8]
+split = int(0.75*len(data))
+
+train = data[:split]
+test = data[split:]
+
+print(train, test)
