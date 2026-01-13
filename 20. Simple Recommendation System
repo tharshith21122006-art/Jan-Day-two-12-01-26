@@ -1,0 +1,7 @@
+users = {
+    "A":{"AI":5,"ML":4},
+    "B":{"AI":4,"DL":5}
+}
+
+recommend = max(users["B"], key=users["B"].get)
+print("Recommended:", recommend)
