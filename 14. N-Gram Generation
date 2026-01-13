@@ -1,0 +1,5 @@
+sentence = "ai is future"
+words = sentence.split()
+
+bigrams = [(words[i], words[i+1]) for i in range(len(words)-1)]
+print(bigrams)
